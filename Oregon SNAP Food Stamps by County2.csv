@@ -1,0 +1,18 @@
+NAME,Percent Below Poverty Level in the Past 12 Months,Column1,Column2,Column3,Column4
+Benton,0.196,Label (Grouping),    POVERTY STATUS IN THE PAST 12 MONTHS,        Below poverty level,        At or above  poverty level
+Clackamas,0.084,"Benton County, Oregon!!Percent!!Estimate",,0.196,0.804
+Deschutes,0.093,"Clackamas County, Oregon!!Percent!!Estimate",,0.084,0.916
+Douglas,0.171,"Deschutes County, Oregon!!Percent!!Estimate",,0.093,0.907
+Jackson,0.121,"Douglas County, Oregon!!Percent!!Estimate",,0.171,0.829
+Josephine,0.154,"Jackson County, Oregon!!Percent!!Estimate",,0.121,0.879
+Klamath,0.204,"Josephine County, Oregon!!Percent!!Estimate",,0.154,0.846
+Lane,0.13,"Klamath County, Oregon!!Percent!!Estimate",,0.204,0.796
+Linn,0.116,"Lane County, Oregon!!Percent!!Estimate",,0.13,0.87
+Marion,0.118,"Linn County, Oregon!!Percent!!Estimate",,0.116,0.884
+Multnomah,0.126,"Marion County, Oregon!!Percent!!Estimate",,0.118,0.882
+Polk,0.132,"Multnomah County, Oregon!!Percent!!Estimate",,0.126,0.874
+Umatilla,0.119,"Polk County, Oregon!!Percent!!Estimate",,0.132,0.868
+Washington,0.084,"Umatilla County, Oregon!!Percent!!Estimate",,0.119,0.881
+Yamhill,0.119,"Washington County, Oregon!!Percent!!Estimate",,0.084,0.916
+Oregon,0.12,"Yamhill County, Oregon!!Percent!!Estimate",,0.119,0.881
+,,Oregon!!Percent!!Estimate,,0.12,0.88
