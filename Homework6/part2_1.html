@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title> Homework 6: Part 2. Melanie Altenkirch. September 30, 2022.</title>
+</head>
+<body>
+    <h1>
+Ratio of SNAP Benefit Recipience Among Those Under the Poverty Line in Oregon : A 5-Year Measure
+    </h1>
+<h3>
+    I used the same dataset as part 1, but re-cleaned the data, used a 5 year sample to make sure all of the counties were included, and made my own ratio. For the ratio I used data of households receiving SNAP Benefits in Oregon and total households in Oregon, but for each of these datasets I chose to specify the data to only those below the poverty.
+    Therefore, the goal of my chloropleth is to analyse if there are certain places where people may be less informed about access to SNAP benefits or are facing other obstacles, such as stigma, language, or politics. 
+    My ratio was: the amount of households receiving SNAP benefits and under the poverty line, divided by the households under the poverty line. 
+    The map is projected in the Oregon Lambert projection.  
+</h3>
+<h3>
+    <a href="https://data.census.gov/cedsci/table?q=Oregon&t=Income%20and%20Earnings%3AIncome%20and%20Poverty%3ASNAP%2FFood%20Stamps&g=0400000US41%240500000&tid=ACSST1Y2021.S2201">Link to Census Data</a>
+</h3>
+<h3>
+    <a href="./SNAP_Oregon.csv">CSV Data Download</a>
+</h3>
+<h3> <a href="https://github.com/mcalten/Geog370_Oregon_Poverty_Census_data">Link to Github repo</a></h3>
+</body>
+
+
+<body>
+<h2>
+    Map 1: Quantile Measure
+</h2>
+<h3>
+    The Quantile measure is deceptively good-looking. While it is fairly simple to spot the areas that are right in the middle and at each end of the ratio dataset, we don't find out much more of a story from this classification. Because the data is divided according to the amount of rows, it becomes difficult to understand how far apart in value some of the classes are from each other.
+</h3>
+<h3>
+    <a href="./Quantile_SNAP_Opp.geojson">GeoJSON Quantile Classification </a>
+</h3> 
+<img src="./Quantile_BPL_SnAP_Opp.png">
+
+<h2>
+    Map 2: The Equal Interval Measure
+</h2>
+<h3>
+    The Equal Interval divides the classes up evenly according to the values in the columns. This does a bit of a better job at telling us about the data distribution than the quantile measure because values for areas in one color class will be somewhat close to values in the classes above or below.
+    This measure can be skewed by outliers at either end of the data or uneven distribution in the data itself, often causing what seem to be missing classes: not every color class may be represented in the map itself. 
+</h3>
+<h3><a href="./Equal_Interval_SNAP.geojson"> GeoJSON Equal Interval</a></h3>
+<img src="./Equal_Interval_SNAP.png">
+
+<h2>
+    Map 3: Natural Break Measure
+</h2>
+<h3>
+    The Natural Break Mode is most often the best way to classify variables because it tries to find where the data naturally splits. This is a strength because like the equal interval mode, the data is being analyzed by the values. Unlike the equal interval measure, natural break is more likely to represent all of the classes on the map because the classes will be differently sized depending on each set of variables. 
+    However, this can be a weakness for the mode when trying to compare data in classes close to each other; data for the two darkest classes could in some cases be much farther in range than data in two of the middle classes.
+
+</h3>
+<h3> <a href="./Oregon_5Year_SNAP_Used_BPL.geojson"> GeoJSON for Natural Break Mode</a>
+ </h3>
+ <img src="./Natural_Breaks_SNAP_Opp.png"
+
+</body>
+
+
+</html>
