@@ -1,0 +1,27 @@
+<html>
+
+<head></head>
+<body>
+
+    <h1> Homework 8: Using Geoprocessing Techniques to Understand Conservation Threats of Explosions in Ukraine
+    </h1>
+    <h3>
+        Through this project, I am seeking to answer the question of how bomb explosions in Ukraine may affect ecosystems in protected areas. 
+        To begin, I imported and cleaned data surrounding explosion in Ukraine since 2018, with the goal of comparing it to conserved areas in nearby regions. I needed to begin with a Union, because my data came to me in three different files for the conservation areas. However, I wished to combine these into one layer, so used a union to do so. 
+        I also immediately noticed that many of the explosion points were on the edges and surrounding areas of conserved areas, so I decided to begin my analysis by creating a buffer surrounding the conservation sites. 
+        This would allow me to analyze not only the explosions directly in protected areas, but extend my analysis to points that would still affect the ecology within the protected areas. 
+        I created a one-mile buffer surrounding the protected areas in Ukraine. Then, to focus only on the explosions that would affect conservation areas using this line of thinking, I used the tool of intersection.
+        Building an intersection between the buffer including and surrounding protected areas and the explosions in Ukraine, I was able to eliminate the excess data points the would not directly affect the protected areas.
+
+    </h3>
+    <h3>
+        My final map illustrates the explosions in protected areas, which can clue conservationists as to which areas to provide the most ecological help to. 
+    </h3>
+    <img src="./Impacts_Ukraine_Bombing.png" width="900 px">
+        <h2>My data comes from the following sources: 
+    </h2>
+    <h3> <a href= "https://www.protectedplanet.net/country/UKR"> Protected Planet Database of Conservation Areas in Ukraine</a></h3>
+<h3> <a href="https://geodata.lib.utexas.edu/catalog/stanford-gg870xt4706"> Administrative Divisions in Ukraine, 2015</a></h3>
+<h3> <a href="https://acleddata.com/ukraine-crisis/#1646162232662-6ca30964-7f69"> ACLED: Database of Conflict in Ukraine Since 2018</a></h3>
+</body>
+</html>
